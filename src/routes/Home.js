@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const Home = () => (<span>Home</span>);
+const Home = () => <span>Home</span>;
 // function Home() {
 //   return(<span>Home</span>);
 // }
