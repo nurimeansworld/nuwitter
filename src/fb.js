@@ -2,7 +2,8 @@ import * as firebase from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
+  apiKey: 'AIzaSyDjKV1-whbQFWpwZMHKG7mWbC70rbpDNmQ',
+  // apiKey: process.env.REACT_APP_API_KEY,
   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
   projectId: process.env.REACT_APP_PROJECT_ID,
   storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
@@ -11,5 +12,4 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 
-console.log('firebase', firebase);
-export const authService = getAuth;
+export const authService = getAuth();
